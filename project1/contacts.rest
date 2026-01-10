@@ -1,0 +1,9 @@
+### Testar a Rota Principal (Hello World)
+GET http://localhost:8080/
+
+### Testar a listagem de todos os contatos
+GET http://localhost:8080/contacts
+
+### Testar a busca por um ID específico
+### (Substitua o ID abaixo por um ID real que apareceu na listagem acima)
+GET http://localhost:8080/contacts/65a123abc456def7890ghijk
