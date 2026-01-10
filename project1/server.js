@@ -8,7 +8,6 @@ const app = express();
 app
   .use(bodyParser.json())
   .use((req, res, next) => {
-    // Configuração de CORS para permitir acesso externo (importante para o Render)
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader(
       'Access-Control-Allow-Headers',
@@ -19,7 +18,6 @@ app
   })
   .use('/', require('./routes'));
 
-// Inicializa o Banco de Dados antes de subir o servidor
 mongodb.initDb((err) => {
   if (err) {
     console.log(err);
