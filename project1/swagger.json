@@ -5,7 +5,7 @@
     "description": "Contacts API for CSE 341",
     "version": "1.0.0"
   },
-  "host": "project1-o5dl.onrender.com/",
+  "host": "project1-o5dl.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
