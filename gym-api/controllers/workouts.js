@@ -1,7 +1,6 @@
 const mongodb = require('../db/connect');
 const ObjectId = require('mongodb').ObjectId;
 
-// 1. Defina a função primeiro
 const getAll = async (req, res) => {
   const result = await mongodb.getDb().db().collection('workouts').find();
   result.toArray().then((lists) => {
@@ -68,7 +67,6 @@ const deleteWorkout = async (req, res) => {
   }
 };
 
-// 2. Exporte TODAS as funções no final
 module.exports = { 
   getAll, 
   getSingle, 
