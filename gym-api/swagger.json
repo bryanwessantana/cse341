@@ -5,10 +5,10 @@
     "description": "API for managing gym workouts and trainers - CSE 341 Project 2",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "gym-api-3yw4.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
