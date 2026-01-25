@@ -5,8 +5,8 @@ const doc = {
     title: 'Gym Fitness API',
     description: 'API for managing gym workouts and trainers - CSE 341 Project 2',
   },
-  host: 'localhost:8080',
-  schemes: ['http'],
+  host: 'gym-api-3yw4.onrender.com',
+  schemes: ['https'],
 };
 
 const outputFile = './swagger.json';
