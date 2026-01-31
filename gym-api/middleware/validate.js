@@ -18,4 +18,28 @@ const saveWorkout = (req, res, next) => {
   next();
 };
 
-module.exports = { saveWorkout };
+const saveTrainer = (req, res, next) => {
+  const { firstName, lastName, email, specialty } = req.body;
+
+  if (!firstName || !lastName || !email || !specialty) {
+    return res.status(400).json({
+      success: false,
+      message: 'Validation failed: All fields (firstName, lastName, email, specialty) are required.'
+    });
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({
+      success: false,
+      message: 'Validation failed: Invalid email format.'
+    });
+  }
+
+  next();
+};
+
+module.exports = { 
+  saveWorkout,
+  saveTrainer 
+};
